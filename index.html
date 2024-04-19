@@ -3,62 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="mainContainer">
-        <div class="box">
-          <div class="display">
-            <div class="displayText"></div>
-          </div>
-          <div class="buttonOffBox">
-            <div class="buttonOffText">Off</div>
-          </div>
-          <div class="buttonOnBox">
-            <div class="buttonOnText">On</div>
-          </div>
-          <div class="button1Box">
-            <div class="button1BoxText">1</div>
-          </div>
-          <div class="button2Box">
-            <div class="button2BoxText">2</div>
-          </div>
-          <div class="button3Box">
-            <div clss="button3Text">3</div>
-          </div>
-          <div class="button4Box">
-            <div class="button4Text">4</div>
-          </div>
-          <div class="button5Box">
-            <div class="button5Text">5</div>
-          </div>
-          <div class="button6Box">
-            <div class="button6Text">6</div>
-          </div>
-          <div class="button7Box">
-            <div class="button7Text">7</div>
-          </div>
-          <div class="button8Box">
-            <div class="button8Text">8</div>
-          </div>
-          <div class="button9Box">
-            <div class="button9Text">9</div>
-          </div>
-          <div class="buttonMulBox">
-            <div class="buttonMulText">X</div>
-          </div>
-          <div class="buttonDivBox">
-          <div class="buttonDivText">/</div>
-        </div>
-          <div class="buttonMinBox">
-            <div class="buttonMinText">-</div>
-          </div>
-          <div class="buttonPluBox">
-            <div class="buttonPTest">+</div>
-          </div>
-        </div>
-      </div>  
+    <main id="calculator">
+      <section id="display">
+        <input type="text" id="history" value="" disabled>
+        <output id="result" for="history">0</output>
+      </section>
+      <section id="keypad">
+        <button type="button" data-all-clear>C</button> 
+        <button type="button" data-backspace>&#8676;</button>
+        <button type="button" data-percent>%</button>
+        <button type="button" data-operator="+" class="operation">&divide;</button>
+        <button type="button" data-number="7">7</button>
+        <button type="button" data-number="8">8</button>
+        <button type="button" data-number="9">9</button>
+        <button type="button" data-operator="x">&times;</button>
+        <button type="button" data-number="4">4</button>
+        <button type="button" data-number="5">5</button>
+        <button type="button" data-number="6">6</button>
+        <button type="button" data-operator="-" class="operator">&minus;</button>
+        <button type="button" data-number="1">1</button>
+        <button type="button" data-number="2">2</button>
+        <button type="button" data-number="3">3</button>
+        <button type="button" data-operator="+" class="operator">&plus;</button>
+        <button type="button" data-negation>&plus;/&minus;</button>
+        <button type="button" data-number="0">0</button>
+        <button type="button" data-decimal=".">&sdot;</button>
+        <button type="button" data-equals="=" class="operator">&equals;</button>
+      </section>
+    </main>
 </body>
 </html>
