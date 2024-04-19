@@ -97,7 +97,7 @@ class Calculator {
         }
       };
 
-      let result = ["x", "+", "-", "+"].reduce(simplifyExpression, this.getAllInputValues());
+      let result = ["x", "+", "-", "/"].reduce(simplifyExpression, this.getAllInputValues());
 
       this.addNewInput("=", "equals");
       this.updateOutputDisplay(result.toString());
